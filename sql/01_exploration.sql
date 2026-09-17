@@ -55,3 +55,54 @@ INNER JOIN Produit p
     ON v.id_produit = p.id_produit
 GROUP BY p.categorie
 ORDER BY chiffre_affaires DESC;
+
+-- 10. Chiffre d'affaires par produit
+SELECT
+    p.produit,
+    p.categorie,
+    SUM(v.montant) AS chiffre_affaires
+FROM Vente v
+INNER JOIN Produit p
+    ON v.id_produit = p.id_produit
+GROUP BY
+    p.produit,
+    p.categorie
+ORDER BY chiffre_affaires DESC;
+
+-- 11. Chiffre d'affaires par ville
+SELECT
+    c.ville,
+    SUM(v.montant) AS chiffre_affaires
+FROM Vente v
+INNER JOIN Client c
+    ON v.id_client = c.id_client
+GROUP BY c.ville
+ORDER BY chiffre_affaires DESC;
+
+-- 12. Nombre de ventes et panier moyen par année
+SELECT
+    YEAR(date_vente) AS annee,
+    COUNT(*) AS nombre_ventes,
+    SUM(montant) AS chiffre_affaires,
+    AVG(montant) AS panier_moyen
+FROM Vente
+GROUP BY YEAR(date_vente)
+ORDER BY annee;
+-- 13. Vérification des valeurs NULL dans les ventes
+SELECT
+    COUNT(*) AS total_lignes,
+    COUNT(id_vente) AS ventes_renseignees,
+    COUNT(id_client) AS clients_renseignes,
+    COUNT(id_produit) AS produits_renseignes,
+    COUNT(montant) AS montants_renseignes,
+    COUNT(date_vente) AS dates_renseignees
+FROM Vente;
+
+-- 14. Vérification des doublons sur l'identifiant de vente
+SELECT
+    id_vente,
+    COUNT(*) AS nombre_occurrences
+FROM Vente
+GROUP BY id_vente
+HAVING COUNT(*) > 1;
+
