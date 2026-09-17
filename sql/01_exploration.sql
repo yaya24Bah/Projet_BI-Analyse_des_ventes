@@ -1,4 +1,39 @@
--- Exploration de la table Client
+-- =========================================================
+-- 01 - Exploration des données
+-- Projet BI - Analyse des ventes
+-- =========================================================
 
+
+-- 1. Vérifier les clients
 SELECT *
 FROM Client;
+
+
+-- 2. Vérifier les produits
+SELECT *
+FROM Produit;
+
+
+-- 3. Vérifier les ventes
+SELECT *
+FROM Vente;
+
+
+-- 4. Nombre de clients
+SELECT COUNT(*) AS nombre_clients
+FROM Client;
+
+
+-- 5. Nombre de produits
+SELECT COUNT(*) AS nombre_produits
+FROM Produit;
+
+
+-- 6. Nombre de ventes
+SELECT COUNT(*) AS nombre_ventes
+FROM Vente;
+
+
+-- 7. Chiffre d'affaires total
+SELECT SUM(montant) AS chiffre_affaires_total
+FROM Vente;
