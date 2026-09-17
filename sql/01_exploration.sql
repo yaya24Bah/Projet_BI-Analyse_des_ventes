@@ -45,3 +45,13 @@ SELECT
 FROM Vente
 GROUP BY YEAR(date_vente)
 ORDER BY annee;
+
+-- 9. Chiffre d'affaires par catégorie de produit
+SELECT
+    p.categorie,
+    SUM(v.montant) AS chiffre_affaires
+FROM Vente v
+INNER JOIN Produit p
+    ON v.id_produit = p.id_produit
+GROUP BY p.categorie
+ORDER BY chiffre_affaires DESC;
