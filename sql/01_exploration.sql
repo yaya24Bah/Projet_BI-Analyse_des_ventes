@@ -37,3 +37,11 @@ FROM Vente;
 -- 7. Chiffre d'affaires total
 SELECT SUM(montant) AS chiffre_affaires_total
 FROM Vente;
+
+-- 8. Chiffre d'affaires par année
+SELECT
+    YEAR(date_vente) AS annee,
+    SUM(montant) AS chiffre_affaires
+FROM Vente
+GROUP BY YEAR(date_vente)
+ORDER BY annee;
