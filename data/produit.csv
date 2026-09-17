@@ -1,0 +1,16 @@
+id_produit	produit	categorie	prix
+1	Ordinateur portable	Informatique	899,99
+2	Souris	Informatique	25,5
+3	Clavier	Informatique	45
+4	Chaise	Mobilier	120
+5	Bureau	Mobilier	250,99
+6	Écran	Informatique	149.99
+7	Casque audio	Informatique	89.99
+8	Webcam	Informatique	129.99
+9	Imprimante	Informatique	199.99
+10	Disque SSD	Informatique	110.00
+11	Tablette	Informatique	349.99
+12	Lampe de bureau	Mobilier	45.50
+13	Clavier mécanique	Informatique	79.99
+14	Support écran	Informatique	39.99
+15	Hub USB	Informatique	29.99
