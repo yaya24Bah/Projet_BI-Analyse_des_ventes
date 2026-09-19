@@ -25,4 +25,4 @@ Les résultats sont présentés dans un dashboard interactif réalisé avec Powe
 # Aperçu du dashboard
 # Dashboard Ventes
 
-![Dashboard Ventes](screenshots/dashboard_ventes.png)
+![Dashboard Ventes](screenshots/Capture d’écran 2026-09-19 161849.png)
