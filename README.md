@@ -21,3 +21,8 @@ Les résultats sont présentés dans un dashboard interactif réalisé avec Powe
 . Power BI : création du modèle et du dashboard
 . DAX : création des mesures et KPI
 . GitHub : versionnement et documentation du projet
+
+# Aperçu du dashboard
+# Dashboard Ventes
+
+![Dashboard Ventes](screenshots/dashboard_ventes.png)
