@@ -24,5 +24,5 @@ Les résultats sont présentés dans un dashboard interactif réalisé avec Powe
 
 # Aperçu du dashboard
 # Dashboard Ventes
-![Dashboard Ventes](screenshots/dashboard-ventes.png)
+![Dashboard Ventes](https://github.com/yaya24Bah/Projet_BI-Analyse_des_ventes/blob/main/screenshots/Dashboard-ventes.png)
 
